@@ -5,11 +5,6 @@ namespace Library.Test
     public class DateFormatTest
 
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         // Test para comprobar que se realiza el formato de forma correcta.
         [Test]
         public void TestFormat()
@@ -38,6 +33,18 @@ namespace Library.Test
             string expected = "la fecha 0011223344 ahora es 3344-12-00";
             DateFormat Format = new DateFormat();
             Assert.AreEqual(expected, Format.Format(actual));
+        }
+
+        // UTILIZANDO TDD.
+        // Test que comprueba que se aplica el formato deseado (DD-MM-AAAA)
+        [Test]
+        public void TestOtherFormat()
+        {   
+            DateFormat Format = new DateFormat();
+            string actual = "19/04/2020";
+            string expected = "19-04-2020";
+
+            Assert.AreEqual(expected, Format.OtherFormat(actual));
             
         }
     }
