@@ -77,5 +77,15 @@ namespace Library.Test
             string expected = "Error, Fecha invalida";
             Assert.AreEqual(expected, Format.OtherFormat(actual));
         }
+
+        // Test que comprueba que el metodo OtherFormat no acepta string vacío.
+        [Test]
+        public void TestOtherFormatFifth()
+        {
+            DateFormat Format = new DateFormat();
+            string actual = "";
+            string expected = "Error, Fecha invalida";
+            Assert.AreEqual(expected, Format.OtherFormat(actual));
+        }
     }
 }
