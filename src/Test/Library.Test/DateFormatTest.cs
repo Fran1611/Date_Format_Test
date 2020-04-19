@@ -43,7 +43,7 @@ namespace Library.Test
         {   
             DateFormat Format = new DateFormat();
             string actual = "19/04/2020";
-            string expected = "19-04-2020";
+            string expected = "la fecha 19/04/2020 ahora es 19-04-2020";
 
             Assert.AreEqual(expected, Format.OtherFormat(actual));
         }

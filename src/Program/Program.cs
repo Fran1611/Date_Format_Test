@@ -11,6 +11,7 @@ namespace Program
             string TodayDate = "19/04/2020";
             DateFormat Format = new DateFormat();
             Console.WriteLine(Format.Format(TodayDate));
+            Console.WriteLine(Format.OtherFormat(TodayDate));
         }
     }
 }
