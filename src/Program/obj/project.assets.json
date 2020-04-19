@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Library/1.0.0": {
+      "type": "project",
+      "path": "../Library/Library.csproj",
+      "msbuildProject": "../Library/Library.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Library >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\FIT\\.nuget\\packages\\": {},
@@ -14,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FIT\\Desktop\\Programas\\DateFormat\\src\\Program\\Program.csproj",
+      "projectUniqueName": "C:\\Users\\FIT\\Desktop\\Programas\\Date_Format_Test\\src\\Program\\Program.csproj",
       "projectName": "Program",
-      "projectPath": "C:\\Users\\FIT\\Desktop\\Programas\\DateFormat\\src\\Program\\Program.csproj",
+      "projectPath": "C:\\Users\\FIT\\Desktop\\Programas\\Date_Format_Test\\src\\Program\\Program.csproj",
       "packagesPath": "C:\\Users\\FIT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FIT\\Desktop\\Programas\\DateFormat\\src\\Program\\obj\\",
+      "outputPath": "C:\\Users\\FIT\\Desktop\\Programas\\Date_Format_Test\\src\\Program\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -36,7 +55,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\FIT\\Desktop\\Programas\\Date_Format_Test\\src\\Library\\Library.csproj": {
+              "projectPath": "C:\\Users\\FIT\\Desktop\\Programas\\Date_Format_Test\\src\\Library\\Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

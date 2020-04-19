@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FIT\\Desktop\\Programas\\DateFormat\\src\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\FIT\\Desktop\\Programas\\Date_Format_Test\\src\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\FIT\\Desktop\\Programas\\DateFormat\\src\\Library\\Library.csproj",
+      "projectPath": "C:\\Users\\FIT\\Desktop\\Programas\\Date_Format_Test\\src\\Library\\Library.csproj",
       "packagesPath": "C:\\Users\\FIT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FIT\\Desktop\\Programas\\DateFormat\\src\\Library\\obj\\",
+      "outputPath": "C:\\Users\\FIT\\Desktop\\Programas\\Date_Format_Test\\src\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
