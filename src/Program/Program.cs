@@ -8,7 +8,7 @@ namespace Program
     {
         static void Main(string[] args)
         {   
-            string TodayDate = "19/04/2020";
+            string TodayDate = "0011223344";
             DateFormat Format = new DateFormat();
             Console.WriteLine(Format.Format(TodayDate));
         }
