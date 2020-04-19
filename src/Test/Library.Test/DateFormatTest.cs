@@ -1,5 +1,6 @@
 using NUnit.Framework;
 
+
 namespace Library.Test
 {
     public class DateFormatTest
@@ -45,7 +46,36 @@ namespace Library.Test
             string expected = "19-04-2020";
 
             Assert.AreEqual(expected, Format.OtherFormat(actual));
-            
+        }
+        // Test que comprueba que el metodo OtherFormat no acepta fecha invalida
+        [Test]
+        public void TestOtherFormatSecond()
+        {
+            DateFormat Format = new DateFormat();
+            string actual = "2010/04/2020";
+            string expected = "Error, Fecha invalida";
+
+            Assert.AreEqual(expected, Format.OtherFormat(actual));
+        }
+
+        // Test que comprueba que el metodo OtherFormat no acepta fecha si el día no contiene dos digitos.
+        [Test]
+        public void TestOtherFormatThird()
+        {
+            DateFormat Format = new DateFormat();
+            string actual = "1/04/2020";
+            string expected = "Error, Fecha invalida";
+            Assert.AreEqual(expected, Format.OtherFormat(actual));
+        }
+
+        // Test que comprueba que el metodo OtherFormat no acepta fecha sino contiene "/"
+        [Test]
+        public void TestOtherFormatFourth()
+        {
+            DateFormat Format = new DateFormat();
+            string actual = "19-04-2020";
+            string expected = "Error, Fecha invalida";
+            Assert.AreEqual(expected, Format.OtherFormat(actual));
         }
     }
 }
